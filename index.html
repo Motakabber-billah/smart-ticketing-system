@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus TIcket Booking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <!-- Nav starts -->
+        <section>
+            <nav class="bg-white dark:bg-gray-900  z-20 top-0 start-0 mb-0 pt-4">
+                <div
+                    class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto space-x-5 md:space-x-14 lg:space-x-40    xl:space-x-64">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span
+                            class="self-center text-xl md:text-4xl font-extrabold whitespace-nowrap dark:text-white">P-Ticket</span>
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button type="button"
+                            class="flex gap-3 items-center justify-center text-[#1DD100] bg-[#1DD100]/10 font-bold rounded-lg border-[#1DD100] border-2 text-xl md:px-5 lg:px-8 py-3 text-center">Bus
+                            <img src="images/bus-icon.png" alt="">
+                        </button>
+
+                    </div>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col  md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#"
+                                    class="block py-2  text-[#030712]/70 bg-white rounded-sm md:bg-transparent md:p-0"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-[#030712]/70 bg-white rounded-sm md:bg-transparent md:p-0">About</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2  text-[#030712]/70 bg-white rounded-sm md:bg-transparent md:p-0">Destination</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-[#030712]/70 bg-white rounded-sm md:bg-transparent md:p-0">Search</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Nav Ends -->
+
+        <!-- Banner Starts -->
+        <section class="relative">
+            <div class="flex justify-center mt-4 items-center">
+                <div
+                    class="w-[370px] md:w-[740px] lg:w-[980px] xl:w-[1171px] h-[550px] bg-[url('images/banner.png')] bg-cover bg-center rounded-3xl">
+                    <h3 class="text-white font-extrabold text-2xl md:text-4xl lg:text-6xl text-center pt-16">End-to-End
+                        Travel with</h3>
+                    <h3 class="text-[#1DD100] font-extrabold text-2xl md:text-4xl lg:text-6xl text-center mt-2">P
+                        Paribahan</h3>
+                    <p class="text-white font-normal text-base text-center mt-4">Yes, you can run unit tests and view
+                        the results directly within the app. The integrated testing features allow for a streamlined .
+                    </p>
+                    <div class="flex items-center justify-center mt-4 ">
+                        <button
+                            class="bg-[#1DD100] text-[#030712] text-xl font-bold text-center px-7 py-5 rounded-xl">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-center md:gap-4 lg:gap-6 absolute  md:-bottom-14 left-10 md:left-12 lg:left-16 xl:-bottom-10 xl:left-44">
+                <div
+                    class="flex items-center bg-white px-4 py-4 lg:px-8 lg:py-8 gap-4 w-80 md:w-[215px] lg:w-[280px] xl:w-[308px] h-32 rounded-3xl border-b-4 border-[#1DD100] ">
+                    <div>
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-[#030712] text-2xl lg:text-4xl font-bold">500K+</h3>
+                        <p class="text-base font-normal text-[#030712]">Registered users</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center bg-white px-4 py-4 lg:px-8 lg:py-8  gap-4 w-80 md:w-[215px] lg::w-[280px] xl:w-[308px] h-32 rounded-3xl border-b-4 border-[#1DD100] ">
+                    <div>
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-[#030712] text-2xl lg:text-4xl font-bold">1.7 lacks</h3>
+                        <p class="text-base font-normal text-[#030712]">Ticket Solds</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center bg-white px-4 py-4 lg:px-8 lg:py-8  gap-4 w-80  md:w-[215px] lg:w-[280px] xl:w-[308px] h-32 rounded-3xl border-b-4 border-[#1DD100] ">
+                    <div>
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-[#030712] text-2xl lg:text-4xl font-bold">80K+</h3>
+                        <p class="text-base font-normal text-[#030712]">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Ends -->
+    </header>
+    <main>
+        <!-- Offer Section Starts -->
+        <section class="mt-[400px] md:mt-20">
+            <h3 class="text-[#030712] text-2xl md:text-4xl font-bold text-center">Best offers for you</h3>
+            <div class="flex flex-col xl:flex-row items-center justify-center gap-6 mt-5">
+                <div class="relative">
+                    <div class="md:w-[573px] flex">
+                        <div
+                            class="bg-[#FFBF0F] py-6 md:py-12 pl-6 md:pl-12 pr-[35px] md:pr-[75px] rounded-l-3xl rounded-r-3xl">
+                            <h3 class="text-[#030712]/80 font-bold text-2xl md:text-4xl">15% OFF</h3>
+                            <p><span class="text-[#030712]/80 font-semibold text-[18px]">on your next
+                                    purchase</span><br><span class="text-[#030712]/50 font-medium text-xl"></span>
+                                use by January 2024</p>
+                        </div>
+                        <div
+                            class="bg-[#FFBF0F] py-6 md:py-12 pl-6 md:pl-12 pr-[35px] md:pr-[75px] rounded-l-3xl rounded-r-3xl">
+                            <h3 class="text-[#030712]/80 font-bold text-2xl md:text-4xl">NEW15</h3>
+                            <p class="text-[#030712]/50 font-medium text-xl">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[218px] -top-5 md:-top-5 md:left-[285px] w-12 h-12 bg-white rounded-full ">
+                    </div>
+                    <div
+                        class="absolute left-[218px] top-28 md:top-40 md:left-[285px] w-12 h-12 bg-white rounded-full ">
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="md:w-[573px] flex">
+                        <div
+                            class="bg-[#F78C9C] py-6 md:py-12 pl-6 md:pl-12 pr-[35px] md:pr-[75px] rounded-l-3xl rounded-r-3xl">
+                            <h3 class="text-[#030712]/80 font-bold text-2xl md:text-4xl">15% OFF</h3>
+                            <p><span class="text-[#030712]/80 font-semibold text-[18px]">on your next
+                                    purchase</span><br><span class="text-[#030712]/50 font-medium text-xl"></span>
+                                use by January 2024</p>
+                        </div>
+                        <div
+                            class="bg-[#F78C9C] py-6 md:py-12 pl-6 md:pl-12 pr-[35px] md:pr-[75px] rounded-l-3xl rounded-r-3xl">
+                            <h3 class="text-[#030712]/80 font-bold text-2xl md:text-4xl">NEW15</h3>
+                            <p class="text-[#030712]/50 font-medium text-xl">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-[218px] -top-5 md:-top-5 md:left-[285px] w-12 h-12 bg-white rounded-full">
+
+                    </div>
+                    <div class="absolute left-[218px] top-28 md:top-40 md:left-[285px] w-12 h-12 bg-white rounded-full">
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-14 mb-14">
+                <button
+                    class="bg-white text-[#1DD100] text-xl font-bold text-center px-7 py-5 rounded-xl border-[1px] border-[#1DD100]">See
+                    All Offers
+                </button>
+            </div>
+        </section>
+
+        <!-- Booking section Starts -->
+        <section class="bg-[#F7F8F8]">
+            <h3 class="text-[#030712] text-2xl md:text-4xl font-bold text-center mb-6">P.H Paribahan</h3>
+            <p class="text-[#030712]/60 text-base font-normal text-center mb-11">Yes, you can run unit tests and view
+                the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
+            <div class="w-[912px] h-40 bg-white relative overflow-hidden">
+                <!-- Inner curve at top right -->
+                <div class="absolute -top-8 -right-8 w-16 h-16 bg-[#F7F8F8] rounded-full"></div>
+            </div>
+        </section>
+
+        <!-- Booking section Ends -->
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="Script/bus-ticket.js"></script>
+    <script src="Script/utility.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
