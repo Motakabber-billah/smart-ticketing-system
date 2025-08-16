@@ -209,7 +209,7 @@
                         </div>
                         <button type="button"
                             class="flex gap-3 items-center justify-center text-[#1DD100] bg-[#1DD100]/10 font-medium rounded-lg border-[#1DD100] border-2 text-base md:px-3 lg:px-5 py-3 text-center">
-                            <img src="images/seat-green.png" alt="">40 Seats left
+                            <img src="images/seat-green.png" alt=""><span id="left-seat">40</span>Seats left
                         </button>
                     </div>
                     <div class="bg-[#F7F8F8] md:p-8 rounded-2xl">
@@ -302,52 +302,52 @@
                     </div>
                     <div class="flex">
                         <div class="flex flex-col gap-3 mr-8">
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">A1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">B1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">C1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">D1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">E1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">F1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">G1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">H1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">I1</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">J1</button>
+                            <button onclick="book(this.id)" id="A1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">A1</button>
+                            <button onclick="book(this.id)" id="B1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">B1</button>
+                            <button onclick="book(this.id)" id="C1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">C1</button>
+                            <button onclick="book(this.id)" id="D1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">D1</button>
+                            <button onclick="book(this.id)" id="E1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">E1</button>
+                            <button onclick="book(this.id)" id="F1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">F1</button>
+                            <button onclick="book(this.id)" id="G1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">G1</button>
+                            <button onclick="book(this.id)" id="H1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">H1</button>
+                            <button onclick="book(this.id)" id="I1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">I1</button>
+                            <button onclick="book(this.id)" id="J1" class="bg-[#030712]/10 border rounded-xl py-3 px-9">J1</button>
                         </div>
                         <div class="flex flex-col gap-3 mr-16">
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">A2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">B2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">C2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">D2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">E2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">F2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">G2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">H2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">I2</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">J2</button>
+                            <button onclick="book(this.id)" id="A2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">A2</button>
+                            <button onclick="book(this.id)" id="B2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">B2</button>
+                            <button onclick="book(this.id)" id="C2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">C2</button>
+                            <button onclick="book(this.id)" id="D2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">D2</button>
+                            <button onclick="book(this.id)" id="E2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">E2</button>
+                            <button onclick="book(this.id)" id="F2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">F2</button>
+                            <button onclick="book(this.id)" id="G2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">G2</button>
+                            <button onclick="book(this.id)" id="H2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">H2</button>
+                            <button onclick="book(this.id)" id="I2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">I2</button>
+                            <button onclick="book(this.id)" id="J2" class="bg-[#030712]/10 border rounded-xl py-3 px-9">J2</button>
                         </div>
                         <div class="flex flex-col gap-3 mr-8">
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">A3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">B3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">C3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">D3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">E3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">F3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">G3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">H3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">I3</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">J3</button>
+                            <button onclick="book(this.id)" id="A3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">A3</button>
+                            <button onclick="book(this.id)" id="B3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">B3</button>
+                            <button onclick="book(this.id)" id="C3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">C3</button>
+                            <button onclick="book(this.id)" id="D3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">D3</button>
+                            <button onclick="book(this.id)" id="E3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">E3</button>
+                            <button onclick="book(this.id)" id="F3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">F3</button>
+                            <button onclick="book(this.id)" id="G3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">G3</button>
+                            <button onclick="book(this.id)" id="H3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">H3</button>
+                            <button onclick="book(this.id)" id="I3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">I3</button>
+                            <button onclick="book(this.id)" id="J3" class="bg-[#030712]/10 border rounded-xl py-3 px-9">J3</button>
                         </div>
                         <div class="flex flex-col gap-3">
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">A4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">B4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">C4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">D4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">E4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">F4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">G4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">H4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">I4</button>
-                            <button class="bg-[#030712]/10 border rounded-xl py-3 px-9">J4</button>
+                            <button onclick="book(this.id)" id="A4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">A4</button>
+                            <button onclick="book(this.id)" id="B4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">B4</button>
+                            <button onclick="book(this.id)" id="C4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">C4</button>
+                            <button onclick="book(this.id)" id="D4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">D4</button>
+                            <button onclick="book(this.id)" id="E4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">E4</button>
+                            <button onclick="book(this.id)" id="F4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">F4</button>
+                            <button onclick="book(this.id)" id="G4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">G4</button>
+                            <button onclick="book(this.id)" id="H4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">H4</button>
+                            <button onclick="book(this.id)" id="I4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">I4</button>
+                            <button onclick="book(this.id)" id="J4" class="bg-[#030712]/10 border rounded-xl py-3 px-9">J4</button>
                         </div>
                     </div>
                 </div>
@@ -358,31 +358,24 @@
                 </div>
                 <div>
                     <div>
-                        <div class=" gap-5 bg-[#F7F8F8] rounded-xl p-8 mb-6">
-                            <div class="flex justify-between border-b border-dashed mb-4 border-[#030712]/20">
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">Seat<span> 0</span></h3>
+                        <div class=" bg-[#F7F8F8] rounded-xl p-8 mb-6">
+                            <div class="flex justify-between border-b border-dashed mb-1 border-[#030712]/20">
+                                <h3 class="text-[#030712] text-base font-semibold mb-3">Seat <span id="seat-number" class="bg-[#1DD100] px-2 rounded-md"> 0</span></h3>
                                 <h3 class="text-[#030712] text-base font-semibold mb-3">Class</h3>
                                 <h3 class="text-[#030712] text-base font-semibold mb-3">Price</h3>
                             </div>
-                            <div class="flex justify-between">
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">C2</h3>
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">Economy</h3>
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">550</h3>
-                            </div>
-                            <div class="flex justify-between border-b border-dashed mb-4 border-[#030712]/20">
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">C2</h3>
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">Economy</h3>
-                                <h3 class="text-[#030712] text-base font-semibold mb-3">550</h3>
+                            <div id="ticketContainer" class="flex flex-col justify-between border-b border-dashed mb-4 border-[#030712]/20">
                             </div>
                             <div class="flex justify-between">
                                 <h3 class="text-[#030712] text-base font-semibold mb-3">Total Price</h3>
                                 <div class="flex">
-                                    <h3 class="text-[#030712] text-base font-semibold mb-3">BDT</h3>
-                                    <h3 class="text-[#030712] text-base font-semibold mb-3">1100</h3>
+                                    <h3 class="text-[#030712] text-base font-semibold mb-3">BDT </h3>
+                                    <h3 class="text-[#030712] text-base font-semibold mb-3"> <span id="total-price" class="ml-1">0</span></h3>
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg p-2 flex items-center justify-between mb-6">
-                                <h3>Have any Coupon?</h3>
+                                <!-- <h3>Have any Coupon?</h3> -->
+                                <input type="text" placeholder="Have any Coupon?" name="" id="">
                                 <button
                                     class="w-20 h-10 bg-[#1DD100] text-white text-base font-semibold rounded-xl">Apply</button>
                             </div>
