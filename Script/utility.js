@@ -83,45 +83,17 @@ function storeButton(id) {
 
             setTextValueById('grand-total', totalPrice);
         }
-
-        // if (clickedButtonsLength <= 3) {
-        //     if (!clickedButtons.includes(text)) {
-        //         setBackgroundColorById(text);
-        //         clickedButtons.push(text);
-        //     }
-        // }
-
     }
-
 }
-
-
-// function apply(id) {
-//     if (clickedButtonsLength === 3) {
-//         showElementById('discount');
-//         const couponElementTextValue = document.getElementById('discount-coupon');
-//         const couponTextValue = couponElementTextValue.innerText;
-//         const couponInputed = couponTextValue.toUpperCase();
-//         const couponCode = "New15";
-//         const couponText = couponCode.toUpperCase();
-//         if (couponText === couponInputed) {
-//             const totalPrice = getTextValueById('total-price').innerText;
-//             const discountprice = totalPrice - (totalPrice * .15);
-//         }
-
-//         setTextValueById('grand-total', discountprice);
-
-//     }
-// }
 
 function actionApply(id) {
     const couponElementTextValue = document.getElementById('discount-coupon').value;
-    console.log(couponElementTextValue);
+    //console.log(couponElementTextValue);
     const couponInputed = couponElementTextValue.toUpperCase();
-    console.log(couponInputed);
+    //console.log(couponInputed);
     const couponCode = "New15";
     const couponText = couponCode.toUpperCase();
-    console.log(couponText);
+    //console.log(couponText);
     if (couponText === couponInputed) {
         const totalPrice = document.getElementById('total-price').innerText;
         const discountprice = totalPrice - (totalPrice * .15);
