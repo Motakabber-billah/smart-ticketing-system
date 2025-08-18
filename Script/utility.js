@@ -37,7 +37,11 @@ function storeButton(id) {
             let totalPrice = calculatePrice * 550;
             setTextValueById('total-price', totalPrice);
 
-
+            function showElementById(id) {
+                const element = document.getElementById(id);
+                element.classList.remove('hidden');
+            }
+            showElementById('discount');
         }
 
     }
