@@ -375,15 +375,15 @@
                             </div>
                             <div id="discount" class="bg-white rounded-lg p-2 flex items-center justify-between mb-6 hidden">
                                 <!-- <h3>Have any Coupon?</h3> -->
-                                <input type="text" placeholder="Have any Coupon?" name="" id="">
-                                <button
+                                <input type="text" placeholder="Have any Coupon?" name="" id="discount-coupon">
+                                <button onclick="apply(this.id)" id="apply"
                                     class="w-20 h-10 bg-[#1DD100] text-white text-base font-semibold rounded-xl">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <h3 class="text-[#030712] text-base font-semibold mb-3">Grand Total</h3>
                                 <div class="flex">
-                                    <h3 class="text-[#030712] text-base font-semibold mb-3">BDT</h3>
-                                    <h3 class="text-[#030712] text-base font-semibold mb-3">1100</h3>
+                                    <h3 class="text-[#030712] text-base font-semibold mb-3">BDT </h3>
+                                    <h3 class="text-[#030712] text-base font-semibold mb-3"> <span id="grand-total"></span></h3>
                                 </div>
                             </div>
                         </div>

@@ -33,29 +33,34 @@ function storeButton(id) {
             addRow(id);
 
             let calculatePrice = updatedSeatNumber;
-            console.log(calculatePrice);
+            //console.log(calculatePrice);
             let totalPrice = calculatePrice * 550;
             setTextValueById('total-price', totalPrice);
 
-            function showElementById(id) {
-                const element = document.getElementById(id);
-                element.classList.remove('hidden');
-            }
-            showElementById('discount');
-        }
+            setTextValueById('grand-total', totalPrice);
 
+            if (clickedButtonsLength === 3) {
+                showElementById('discount');
+                setTextValueById('grand-total', '0');
+                actionApply(id);
+            }
+        }
     }
 
     else {
         if (clickedButtons.includes(text)) {
             clickedButtons.splice(index, 1);
             removeBackgroundColorById(text);
-            console.log(clickedButtons);
+            // console.log(clickedButtons);
 
             let initialSeatNumber = getTextValueById('seat-number');
             let updatedSeatNumber = initialSeatNumber - 1;
             //console.log(updatedSeatNumber);
             setTextValueById('seat-number', updatedSeatNumber);
+
+            if (updatedSeatNumber < 4) {
+                hideElementById('discount');
+            }
 
             let initialTotalSeat = getTextValueById('left-seat');
             // console.log(initialTotalSeat);
@@ -75,6 +80,8 @@ function storeButton(id) {
             //console.log(calculatePrice);
             let totalPrice = calculatePrice * 550;
             setTextValueById('total-price', totalPrice);
+
+            setTextValueById('grand-total', totalPrice);
         }
 
         // if (clickedButtonsLength <= 3) {
@@ -84,6 +91,42 @@ function storeButton(id) {
         //     }
         // }
 
+    }
+
+}
+
+
+// function apply(id) {
+//     if (clickedButtonsLength === 3) {
+//         showElementById('discount');
+//         const couponElementTextValue = document.getElementById('discount-coupon');
+//         const couponTextValue = couponElementTextValue.innerText;
+//         const couponInputed = couponTextValue.toUpperCase();
+//         const couponCode = "New15";
+//         const couponText = couponCode.toUpperCase();
+//         if (couponText === couponInputed) {
+//             const totalPrice = getTextValueById('total-price').innerText;
+//             const discountprice = totalPrice - (totalPrice * .15);
+//         }
+
+//         setTextValueById('grand-total', discountprice);
+
+//     }
+// }
+
+function actionApply(id) {
+    const couponElementTextValue = document.getElementById('discount-coupon').value;
+    console.log(couponElementTextValue);
+    const couponInputed = couponElementTextValue.toUpperCase();
+    console.log(couponInputed);
+    const couponCode = "New15";
+    const couponText = couponCode.toUpperCase();
+    console.log(couponText);
+    if (couponText === couponInputed) {
+        const totalPrice = document.getElementById('total-price').innerText;
+        const discountprice = totalPrice - (totalPrice * .15);
+        const discountedPrice = parseInt(discountprice);
+        setTextValueById('grand-total', discountedPrice);
     }
 
 }
@@ -126,4 +169,14 @@ function getTextValueById(elementId) {
 function setTextValueById(elementId, value) {
     const element = document.getElementById(elementId);
     element.innerText = value;
+}
+
+function showElementById(id) {
+    const element = document.getElementById(id);
+    element.classList.remove('hidden');
+}
+
+function hideElementById(id) {
+    const element = document.getElementById(id);
+    element.classList.add('hidden');
 }

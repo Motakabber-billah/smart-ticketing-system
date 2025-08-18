@@ -1,7 +1,9 @@
 function book(id) {
     storeButton(id);
-    // removeButton(id);
+}
 
+function apply(id){
+    actionApply(id);
 }
 
 
